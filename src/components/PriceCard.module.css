@@ -1,0 +1,132 @@
+.wrapper {
+    margin-top: 40px;
+    background-color: var(--white);
+    border-radius: 20px;
+    height: 570px;
+    color: var(--font);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.textsWrapper {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: var(--gray-200);
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.price {
+    margin-left: 50px;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    line-height: 1.5rem;
+}
+
+.descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 1.4rem;
+    margin-left: 50px;
+    /* font-weight: 600; */
+    line-height: 1.5rem;
+}
+
+.topicWrapper {
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.topic {
+    color: var(--primary);
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.topicText {
+    font-size: 1.4rem;
+    margin-top: 7px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.buttonWrapper button {
+    background-color: var(--primary);
+    color: var(--white);
+    width: 80%;
+    align-self: center;
+    padding: 10px 0;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.buttonWrapper button:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        width: 60%;
+        height: auto;
+        align-self: center;
+    }
+    .textsWrapper {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        height: auto;
+        align-self: center;
+    }
+    .title {
+        font-size: calc(1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(
+            1.4 * (1.35rem + (2 - 1.35) * ((100vw - 20rem) / (48 - 20)))
+        );
+    }
+    .price,
+    .description,
+    .topicText,
+    .buttonWrapper button {
+        font-size: calc(1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(
+            1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)))
+        );
+    }
+}

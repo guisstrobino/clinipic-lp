@@ -1,0 +1,42 @@
+.wrapper {
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+}
+
+.textsWrapepr {
+    width: 50%;
+}
+
+.title {
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 5rem;
+}
+
+.subtitle {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: calc(2.4rem + (5 - 2.4) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(
+            1.1 * (2.4rem + (5 - 2.4) * ((100vw - 20rem) / (48 - 20)))
+        );
+    }
+    .subtitle {
+        font-size: calc(1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+        line-height: calc(
+            1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)))
+        );
+    }
+}
