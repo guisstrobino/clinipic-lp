@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./Header.module.css";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useClickAway } from "react-use";
